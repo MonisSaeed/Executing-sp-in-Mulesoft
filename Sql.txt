@@ -1,0 +1,21 @@
+Run this as stored Procedure:
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `GetFirstName`( )
+BEGIN
+SELECT first_name  FROM demo.salesforcecontacts ;
+END
+
+Run This to create Schema
+
+Run This to insert a value
+INSERT INTO `salesforcecontacts` (`first_name`,`last_name`,`email`) VALUES ("Sam","Curran","sam@email.com");
+CREATE TABLE SalesforceContacts(
+    `id`  int(11) NOT NULL AUTO_INCREMENT,
+    `first_name` varchar(150),
+    `last_name` varchar(150),
+    
+    
+    `email` varchar(150),
+    
+     PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
